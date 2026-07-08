@@ -1,0 +1,128 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #aaaaaa;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 50px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.cta {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cta:hover {
+  background-color: #1d4ed8;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px; /* rectangle with soft corners, change to 0 for sharp corners, or 50% for a circle */
+  object-fit: cover;
+  border: 3px solid #2563eb;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.hero p {
+  font-size: 16px;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+}
+
+.btn-download {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-download:hover {
+  background-color: #e5e5e5;
+}
