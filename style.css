@@ -126,3 +126,78 @@ nav a:hover {
 .btn-download:hover {
   background-color: #e5e5e5;
 }
+
+.learning, .work {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.learning h2, .work h2 {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.thm-badge {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.learning-grid, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.learning-card, .project-card {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.learning-card:hover, .project-card:hover {
+  border-color: #2563eb;
+}
+
+.learning-card h3, .project-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.learning-card p, .project-card p {
+  font-size: 14px;
+  color: #aaaaaa;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.learning-card a {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.learning-card a:hover {
+  text-decoration: underline;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  font-size: 11px;
+  padding: 4px 10px;
+  border: 1px solid #2a2a2a;
+  border-radius: 50px;
+  color: #aaaaaa;
+}
