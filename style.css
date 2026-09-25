@@ -8,7 +8,7 @@ body {
   background-color: #0a0a0a;
   color: #ffffff;
   font-family: Georgia, serif;
-  padding: 2rem;
+  padding: 0;
 }
 
 h1 {
@@ -21,6 +21,7 @@ h1 {
 p {
   color: #aaaaaa;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -81,8 +82,8 @@ nav a:hover {
 }
 
 .profile-photo {
-  width: 90px;
-  height: 90px;
+  width: 180px;
+  height: 180px;
   border-radius: 12px; /* rectangle with soft corners, change to 0 for sharp corners, or 50% for a circle */
   object-fit: cover;
   border: 3px solid #2563eb;
@@ -200,4 +201,20 @@ nav a:hover {
   border: 1px solid #2a2a2a;
   border-radius: 50px;
   color: #aaaaaa;
+}
+.writeup-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+  border: 1px solid #2563eb;
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: all 0.2s;
+}
+
+.writeup-link:hover {
+  background-color: #2563eb;
+  color: white;
 }
