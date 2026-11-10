@@ -1,119 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- Security: GitHub Pages can't set headers, so the policy is set here.
+         No scripts are allowed at all; only the LinkedIn embed and TryHackMe badge are permitted externally. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' https://tryhackme-badges.s3.amazonaws.com; frame-src https://www.linkedin.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Navaneetan Mamallan — Security Engineer. Android pentesting guides, security writeups and research." />
     <title>Navaneetan Mamallan — Security Engineer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-      <div class="logo">NM</div>
-      <nav>
+    <header class="site-header">
+      <a href="#about" class="logo" aria-label="Home">NM</a>
+      <nav aria-label="Primary">
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#learning">Learning</a>
         <a href="mailto:mr.navaneetan@gmail.com">Contact</a>
       </nav>
-      <a href="https://www.linkedin.com/in/navaneetan-m" class="cta">Let's talk</a>
+      <a href="https://www.linkedin.com/in/navaneetan-m" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Let's talk</a>
     </header>
 
-    <section class="hero">
-      <div class="hero-top">
-    <h1>Hi, I'm Navaneetan, <br> Security Engineer </h1>
-    <img src="photo.jpg" alt="Navaneetan Mamallan" class="profile-photo" />
-  </div>
+    <main id="main">
+      <section class="section hero" id="about">
+        <div class="hero-top">
+          <div class="hero-text">
+            <h1>Hi, I'm Navaneetan,<br /> Security Engineer</h1>
+            <p class="lead">Securing systems and organizations.</p>
+          </div>
+          <img src="photo.jpg" alt="Navaneetan Mamallan" class="profile-photo" width="180" height="180" decoding="async" />
+        </div>
 
-  <p>Securing systems and organizations.</p>
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/navaneetan-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/Navaneetan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://tryhackme.com/p/Navaneet" target="_blank" rel="noopener noreferrer">TryHackMe</a></li>
+        </ul>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/navaneetan-m">LinkedIn</a>
-        <a href="https://github.com/Navaneetan">GitHub</a>
-        <a href="https://tryhackme.com/p/Navaneet">tryhackme</a>
-      </div>
+        <a href="resume.pdf" class="btn btn-light" download>Download Resume</a>
+      </section>
 
-      <a href="resume.pdf" class="btn-download">Download Resume</a>
-    </section>
-<section class="work" id="work">
-  <h2>Work & Writeups</h2>
-  <div class="project-grid">
+      <section class="section" id="work">
+        <h2 class="section-title">Work &amp; Writeups</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Android Penetration Testing Set-up</h3>
+            <p>A step-by-step guide to setting up the perfect Android pentest environment: first the emulator, then Burp Suite, and finally ADB and Frida.</p>
+            <ul class="tags">
+              <li>Android</li>
+              <li>Burp Suite</li>
+              <li>OWASP Mobile</li>
+            </ul>
+            <div class="card-actions">
+              <a href="Android_pentest_Emulator_set-up.pdf" class="btn btn-light" target="_blank" rel="noopener">1. Emulator set-up</a>
+              <a href="Burpsuite_Proxy_Set-up_Android.pdf" class="btn btn-light" target="_blank" rel="noopener">2. Burp Suite proxy set-up</a>
+              <a href="ADB_Frida_Set-up.pdf" class="btn btn-light" target="_blank" rel="noopener">3. ADB &amp; Frida set-up</a>
+            </div>
+          </article>
 
-    <div class="project-card">
-      <h3>Android Penetration Testing set-up</h3>
-      <p>This is a step by step guide to set-up the perfect android pentest environment. Firstly set-up the emulator, then burpsuite and finally ADB and Frida tools</p>
-      <div class="tags">
-        <span>Android</span>
-        <span>Burp Suite</span>
-        <span>OWASP Mobile</span>
-        <a href="Android_pentest_Emulator_set-up.pdf" class="btn-download">1.Emulator set-up</a>
-        <a href="Burpsuite_Proxy_Set-up_Android.pdf" class="btn-download">2.Burpsuite proxy set-up</a>
-        <a href="ADB_Frida_Set-up.pdf" class="btn-download">3.ADB & Frida set-up</a>
-      </div>
-    </div>
+          <article class="card">
+            <h3>AllSafe App — Security Writeup</h3>
+            <p>A partial vulnerability assessment of the AllSafe intentionally vulnerable Android app. I've documented the initial attack surface and entry points — the rest is gated intentionally.</p>
+            <p class="muted">Tried it yourself? I'd love to hear how far you've gone.</p>
+            <ul class="tags">
+              <li>Android</li>
+              <li>Mobile Security</li>
+              <li>Writeup</li>
+            </ul>
+            <div class="card-actions">
+              <a href="Allsafe_Android_Write-up.pdf" class="btn btn-light" target="_blank" rel="noopener">Download write-up</a>
+              <a href="mailto:mr.navaneetan@gmail.com?subject=AllSafe%20Writeup%20%E2%80%94%20Journey" class="btn btn-outline">Share your journey &amp; get the full writeup →</a>
+            </div>
+          </article>
 
-    <div class="project-card">
-      <h3>AllSafe App — Security Writeup</h3>
-<p>A partial vulnerability assessment of the AllSafe intentionally vulnerable Android app. 
-I've documented the initial attack surface and entry points — the rest is gated intentionally.</p>
-<p class="post-date">Tried it yourself? I'd love to hear how far you've gone.</p>
-<a href="mailto:mr.navaneetan@gmail.com?subject=AllSafe Writeup — Journey" class="writeup-link">
-  Share your journey & get the full writeup →
-</a>      <div class="tags">
-        <span>Android</span>
-        <span>Mobile Security</span>
-        <span>Writeup</span>
-         <a href="Allsafe_Android_Write-up.pdf" class="btn-download">Download write-up</a>
-      </div>
-    </div>
+          <article class="card">
+            <h3>AI Use Cases in Security</h3>
+            <p>Research and exploration of how AI tools are being leveraged in both offensive and defensive cybersecurity operations.</p>
+            <ul class="tags">
+              <li>AI</li>
+              <li>LLMs</li>
+              <li>Threat Detection</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <div class="project-card">
-      <h3>AI Usecases in Security</h3>
-      <p>Research and exploration of how AI tools are being leveraged in both offensive and defensive cybersecurity operations.</p>
-      <div class="tags">
-        <span>AI</span>
-        <span>LLMs</span>
-        <span>Threat Detection</span>
-      </div>
-    </div>
+      <section class="section" id="posts">
+        <h2 class="section-title">Latest Posts</h2>
+        <div class="embed">
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7467433475944415232?collapsed=1"
+            title="Embedded LinkedIn post"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </section>
 
-  </div>
-</section>
+      <section class="section" id="learning">
+        <h2 class="section-title">Currently Learning</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>CompTIA Security+</h3>
+            <p>Currently studying for Security+ certification covering threat analysis, cryptography, and network security.</p>
+          </article>
+          <article class="card">
+            <h3>Databricks Gen AI Engineer Associate</h3>
+            <p>Learning about problem decomposition, model selection, and leveraging Databricks-specific tools such as AI Search, Model Serving, MLflow, and Unity Catalog for data governance and lifecycle management.</p>
+          </article>
+          <article class="card">
+            <h3>TryHackMe</h3>
+            <p>Actively working through rooms focused on penetration testing, network security, and CTF challenges.</p>
+            <img src="https://tryhackme-badges.s3.amazonaws.com/Navaneet.png" alt="TryHackMe badge for Navaneet" class="thm-badge" loading="lazy" referrerpolicy="no-referrer" />
+            <a href="https://tryhackme.com/p/Navaneet" class="text-link" target="_blank" rel="noopener noreferrer">View Profile →</a>
+          </article>
+        </div>
+      </section>
+    </main>
 
-<section class="linkedin-posts" id="posts">
-  <h2>Latest Posts</h2>
-  <div class="posts-grid">
-    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7467433475944415232?collapsed=1" height="633" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-</section>
-
-    <section class="learning" id="learning">
-  <h2>Currently Learning</h2>
-  <div class="learning-grid">
-
-
-    <div class="learning-card">
-      <h3>CompTIA Security+</h3>
-      <p>Currently studying for Security+ certification covering threat analysis, cryptography, and network security.</p>
-    </div>
-    <div class="learning-card">
-      <h3>Databricks Gen AI Engineer Associate</h3>
-      <p>Learning about problem decomposition, model selection, and leveraging Databricks-specific tools such as AI Search, Model Serving, MLflow, and Unity Catalog for data governance and lifecycle management.</p>
-    </div>
-    <div class="learning-card">
-  <h3>TryHackMe</h3>
-  <p>Actively working through rooms focused on penetration testing, network security, and CTF challenges.</p>
-  <img src="https://tryhackme-badges.s3.amazonaws.com/Navaneet.png" alt="TryHackMe Badge" class="thm-badge" />
-  <a href="https://tryhackme.com/p/Navaneet" target="_blank">View Profile →</a>
-</div>
-
-  </div>
-</section>
-
-
-
-    <footer>
-      <p>Ex-Intern at <a href="https://m2pfintech.com/">M2P Fintech</a></p>
-      <p>Ex-Employee at <a href="https://www.mithra.consulting/">Mithra Consulting</a></p>
-    </footer>  <!-- Your content goes here -->
-
+    <footer class="section site-footer">
+      <p>Ex-Intern at <a href="https://m2pfintech.com/" target="_blank" rel="noopener noreferrer">M2P Fintech</a></p>
+      <p>Ex-Employee at <a href="https://www.mithra.consulting/" target="_blank" rel="noopener noreferrer">Mithra Consulting</a></p>
+    </footer>
   </body>
 </html>
